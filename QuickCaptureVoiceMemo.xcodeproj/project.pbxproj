@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		XX76EEAED1EC96D061EFB3XX /* QuickCaptureWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = XXC71ADEF0C05BF005D89EXX /* QuickCaptureWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		105FC58A2E9EAD3200EA8BCF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -21,13 +25,45 @@
 			remoteGlobalIDString = 105FC5792E9EAD3100EA8BCF;
 			remoteInfo = QuickCaptureVoiceMemo;
 		};
+		XXADC26BF6ECE5AD8C78AFXX /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 105FC5722E9EAD3100EA8BCF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = XX124C825816749E43808CXX;
+			remoteInfo = QuickCaptureWidget;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		XX4E50CFD7218E4FE0B049XX /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				XX76EEAED1EC96D061EFB3XX /* QuickCaptureWidget.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		105FC57A2E9EAD3100EA8BCF /* QuickCaptureVoiceMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickCaptureVoiceMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		105FC5892E9EAD3200EA8BCF /* QuickCaptureVoiceMemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuickCaptureVoiceMemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		105FC5932E9EAD3200EA8BCF /* QuickCaptureVoiceMemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuickCaptureVoiceMemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		XXC71ADEF0C05BF005D89EXX /* QuickCaptureWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = QuickCaptureWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		XX30890FC0FB4E8EC44E73XX /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = XX124C825816749E43808CXX /* QuickCaptureWidget */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		105FC57C2E9EAD3100EA8BCF /* QuickCaptureVoiceMemo */ = {
@@ -44,6 +80,14 @@
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = QuickCaptureVoiceMemoUITests;
 			sourceTree = "<group>";
+		};
+		XXC844B1DE7D5777FCD3EEXX /* QuickCaptureWidget */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = QuickCaptureWidget;
+			sourceTree = "<group>";
+			exceptions = (
+				XX30890FC0FB4E8EC44E73XX /* PBXFileSystemSynchronizedBuildFileExceptionSet */,
+			);
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
@@ -69,6 +113,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		XX75B8358D2242CEB782C5XX /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -79,6 +130,7 @@
 				105FC58C2E9EAD3200EA8BCF /* QuickCaptureVoiceMemoTests */,
 				105FC5962E9EAD3200EA8BCF /* QuickCaptureVoiceMemoUITests */,
 				105FC57B2E9EAD3100EA8BCF /* Products */,
+				XXC844B1DE7D5777FCD3EEXX /* QuickCaptureWidget */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,6 +140,7 @@
 				105FC57A2E9EAD3100EA8BCF /* QuickCaptureVoiceMemo.app */,
 				105FC5892E9EAD3200EA8BCF /* QuickCaptureVoiceMemoTests.xctest */,
 				105FC5932E9EAD3200EA8BCF /* QuickCaptureVoiceMemoUITests.xctest */,
+				XXC71ADEF0C05BF005D89EXX /* QuickCaptureWidget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -102,10 +155,12 @@
 				105FC5762E9EAD3100EA8BCF /* Sources */,
 				105FC5772E9EAD3100EA8BCF /* Frameworks */,
 				105FC5782E9EAD3100EA8BCF /* Resources */,
+				XX4E50CFD7218E4FE0B049XX /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				XXDFF79EBA086AA96C7F46XX /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				105FC57C2E9EAD3100EA8BCF /* QuickCaptureVoiceMemo */,
@@ -163,6 +218,26 @@
 			productReference = 105FC5932E9EAD3200EA8BCF /* QuickCaptureVoiceMemoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		XX124C825816749E43808CXX /* QuickCaptureWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = XX155A02A9E2EBE9C6D17FXX /* Build configuration list for PBXNativeTarget "QuickCaptureWidget" */;
+			buildPhases = (
+				XXE0FD6AFA7551401BFCEBXX /* Sources */,
+				XX75B8358D2242CEB782C5XX /* Frameworks */,
+				XX8DEE49FEB104205DDA8DXX /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QuickCaptureWidget;
+			productName = QuickCaptureWidget;
+			productReference = XXC71ADEF0C05BF005D89EXX /* QuickCaptureWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+			fileSystemSynchronizedGroups = (
+				XXC844B1DE7D5777FCD3EEXX /* QuickCaptureWidget */,
+			);
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -203,6 +278,7 @@
 				105FC5792E9EAD3100EA8BCF /* QuickCaptureVoiceMemo */,
 				105FC5882E9EAD3200EA8BCF /* QuickCaptureVoiceMemoTests */,
 				105FC5922E9EAD3200EA8BCF /* QuickCaptureVoiceMemoUITests */,
+				XX124C825816749E43808CXX /* QuickCaptureWidget */,
 			);
 		};
 /* End PBXProject section */
@@ -223,6 +299,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		105FC5912E9EAD3200EA8BCF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		XX8DEE49FEB104205DDA8DXX /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -253,6 +336,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		XXE0FD6AFA7551401BFCEBXX /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -265,6 +355,11 @@
 			isa = PBXTargetDependency;
 			target = 105FC5792E9EAD3100EA8BCF /* QuickCaptureVoiceMemo */;
 			targetProxy = 105FC5942E9EAD3200EA8BCF /* PBXContainerItemProxy */;
+		};
+		XXDFF79EBA086AA96C7F46XX /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = XX124C825816749E43808CXX /* QuickCaptureWidget */;
+			targetProxy = XXADC26BF6ECE5AD8C78AFXX /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -413,7 +508,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = app.rork.quickcapture-voice-memo;
+				PRODUCT_BUNDLE_IDENTIFIER = "app.rork.quickcapture-voice-memo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -448,7 +543,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = app.rork.quickcapture-voice-memo;
+				PRODUCT_BUNDLE_IDENTIFIER = "app.rork.quickcapture-voice-memo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -544,6 +639,50 @@
 			};
 			name = Release;
 		};
+		XXB035DAA4D7490D61F8BEXX /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_BUNDLE_IDENTIFIER = "app.rork.quickcapture-voice-memo.quickcapturewidget";
+				PRODUCT_NAME = QuickCaptureWidget;
+				SWIFT_VERSION = 5.0;
+				SDKROOT = iphoneos;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = QuickCaptureWidget/Info.plist;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				MARKETING_VERSION = 1.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				INFOPLIST_KEY_CFBundleDisplayName = "$(PRODUCT_NAME)";
+			};
+			name = Debug;
+		};
+		XXF21A55F18996C164BFC5XX /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_BUNDLE_IDENTIFIER = "app.rork.quickcapture-voice-memo.quickcapturewidget";
+				PRODUCT_NAME = QuickCaptureWidget;
+				SWIFT_VERSION = 5.0;
+				SDKROOT = iphoneos;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = QuickCaptureWidget/Info.plist;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				MARKETING_VERSION = 1.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				INFOPLIST_KEY_CFBundleDisplayName = "$(PRODUCT_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -579,6 +718,15 @@
 			buildConfigurations = (
 				105FC5A42E9EAD3200EA8BCF /* Debug */,
 				105FC5A52E9EAD3200EA8BCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		XX155A02A9E2EBE9C6D17FXX /* Build configuration list for PBXNativeTarget "QuickCaptureWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				XXB035DAA4D7490D61F8BEXX /* Debug */,
+				XXF21A55F18996C164BFC5XX /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
